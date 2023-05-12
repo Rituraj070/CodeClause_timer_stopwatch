@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(214, 214, 214);
+}
+
+.timer{
+    background-color: rgb(0, 0, 0);
+    width: 500px;
+    height: 200px;
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#head{
+    color: rgb(0, 0, 0);
+    width: 550px;
+    /* height: 200px; */
+    font-size: 40px;
+    margin: 10px auto 0;
+}
+
+h1{
+    font-size: 70px;
+    color: white;
+    /* border: 1px solid black; */
+}
+button{
+    margin-top: 20px;
+    width: 70px;
+    height: 40px;
+    cursor: pointer;
+}
+
+#start{
+    background-color: red;
+}
+#pause{
+    background-color: yellow;
+}
+#reset{
+    background-color: purple;
+}
