@@ -40,3 +40,54 @@ function reset(){
     [hours,minutes,seconds] = [0,0,0];
     showTimer.innerHTML = "00:00:00";
 }
+
+
+function clock() {
+    let hours = document.getElementById("hours");
+    let minutes = document.getElementById("minutes");
+    let seconds = document.getElementById("seconds");
+    let period = document.getElementById("period");
+
+
+    h = new Date().getHours();
+    m = new Date().getMinutes();
+    s = new Date().getSeconds();
+    p = hours >= 12 ? "PM" : "AM";
+
+    h = (h > 12) ? h - 12 : h;
+    h = (h < 10) ? "0" + h : h;
+    m = (m < 10) ? ": 0" + m : ": "+ m;
+    s = (s < 10) ? ": 0" + s : ": "+ s;
+
+    hours.innerHTML = h;
+    minutes.innerHTML = m;
+    seconds.innerHTML = s;
+    period.innerHTML = p;
+};
+
+setInterval(clock,1000);
+
+
+
+function hide() {
+
+    let mmm = document.getElementById("timerr");
+    mmm.style.display = "none";
+
+    let kkk = document.getElementById("cc");
+    kkk.style.display = "block";
+    
+    
+}
+
+function show() {
+
+    let mmm = document.getElementById("timerr");
+    mmm.style.display = "flex";
+    // mmm.style.display = ""
+
+    let kkk = document.getElementById("cc");
+    kkk.style.display = "none";
+    
+    
+}
