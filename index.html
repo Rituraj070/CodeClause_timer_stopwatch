@@ -10,12 +10,25 @@
 <body>
 
     <h1 id="head">Timer and Stopwatch Project-1</h1>
-    <div class="timer">
+    <div class="timer" id="timerr">
         <h1 id="showTimer">00:00:00</h1>
         <div class="btn">
             <button id="pause" onclick="pause()">Pause</button>
             <button id="start" onclick="start()">Start</button>
             <button id="reset" onclick="reset()">Reset</button>
+            <button id="tt" onclick="hide()">Timer</button>
+            
+        </div>
+    </div>
+    
+
+    <div class="container" id="cc">
+        <div id="time">
+            <span id="hours" class="tm">00</span>
+            <span id="minutes" class="tm">00</span>
+            <span id="seconds" class="tm">00</span>
+            <span id="period" class="tm">00</span>
+            <button onclick="show()" id="bb">Stopwatch</button>
         </div>
     </div>
 
