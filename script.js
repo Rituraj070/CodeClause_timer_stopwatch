@@ -52,7 +52,7 @@ function clock() {
     h = new Date().getHours();
     m = new Date().getMinutes();
     s = new Date().getSeconds();
-    p = hours >= 12 ? "PM" : "AM";
+    p = h >= 12 ? "PM" : "AM";
 
     h = (h > 12) ? h - 12 : h;
     h = (h < 10) ? "0" + h : h;
